@@ -1,5 +1,9 @@
 # kshape.xyz
 
+[![update](https://github.com/rxxbt/kshape-site/actions/workflows/update.yml/badge.svg)](https://github.com/rxxbt/kshape-site/actions/workflows/update.yml)
+
+Live at **[kshape.xyz](https://kshape.xyz)**.
+
 Live NVDAX payouts and APR for [$KSHAPE](https://www.stonkfun.xyz/token/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7),
 calculated with the [Stonk Board methodology](https://thestonkboard.com/methodology).
 
