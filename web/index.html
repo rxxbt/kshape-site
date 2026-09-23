@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$KSHAPE — NVDAX paid to holders</title>
+<meta name="description" content="Live NVDAX payouts and APR for $KSHAPE, calculated with the Stonk Board methodology. Every number is sourced on-chain; code and data are public.">
+<meta property="og:title" content="$KSHAPE — the bottom leg, paid in the top">
+<meta property="og:description" content="Live NVDAX payouts and APR, every number sourced on-chain.">
+<meta property="og:image" content="https://kshape.xyz/og.png">
+<meta property="og:url" content="https://kshape.xyz/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0d0c">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="logo.png" alt="" width="34" height="34"><span>$KSHAPE</span></a>
+  <nav>
+    <a href="methodology.html">Methodology</a>
+    <a href="https://x.com/kshapetoken" rel="noopener">X</a>
+    <a id="lnk-pad" href="https://www.stonkfun.xyz/token/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7" rel="noopener">StonkFun</a>
+  </nav>
+</header>
+
+<main>
+  <section class="ca">
+    <span class="label">CA</span>
+    <code id="ca">j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7</code>
+    <button id="copy" type="button">copy</button>
+  </section>
+
+  <section class="hero">
+    <p class="label">NVDAX paid to holders</p>
+    <p class="big" id="paid">—</p>
+    <p class="sub" id="paid-sub">&nbsp;</p>
+  </section>
+
+  <section class="card apr">
+    <div class="apr-main">
+      <p class="label">APR since launch</p>
+      <p class="apr-num" id="apr-since">—</p>
+      <p class="sub" id="apy-since">&nbsp;</p>
+    </div>
+    <div class="apr-windows">
+      <div><p class="label">24h</p><p class="apr-small" id="apr-h24">—</p></div>
+      <div><p class="label">3d</p><p class="apr-small" id="apr-d3">—</p></div>
+      <div><p class="label">7d</p><p class="apr-small" id="apr-d7">—</p></div>
+      <div><p class="label">Realized</p><p class="apr-small" id="apr-real">—</p></div>
+    </div>
+    <p class="method">Calculated with the <a href="methodology.html">Stonk Board methodology</a></p>
+  </section>
+
+  <section class="card chart-wrap">
+    <div class="chart-head">
+      <p class="label">NVDAX bought with the tax, since launch</p>
+      <p class="sub" id="chart-total">&nbsp;</p>
+    </div>
+    <div id="chart" class="chart" role="img" aria-label="Cumulative NVDAX bought with the transfer tax since launch"></div>
+    <div id="tip" class="tip" hidden></div>
+  </section>
+
+  <section class="grid">
+    <div class="card"><p class="label">Tax assessed</p><p class="val" id="g-assessed">—</p><p class="sub" id="g-assessed-sub">&nbsp;</p></div>
+    <div class="card"><p class="label">Eligible wallets</p><p class="val" id="g-elig">—</p><p class="sub" id="g-elig-sub">&nbsp;</p></div>
+    <div class="card"><p class="label">Transfer tax</p><p class="val" id="g-tax">—</p><p class="sub">paid out in NVDAX</p></div>
+    <div class="card"><p class="label">Platform deduction</p><p class="val" id="g-ded">—</p><p class="sub">measured on-chain</p></div>
+    <div class="card"><p class="label">KSHAPE</p><p class="val" id="g-px">—</p><p class="sub" id="g-mcap">&nbsp;</p></div>
+    <div class="card"><p class="label">NVDAX</p><p class="val" id="g-nv">—</p><p class="sub">tokenized NVIDIA</p></div>
+  </section>
+</main>
+
+<footer>
+  <p id="updated">&nbsp;</p>
+  <p>Refreshes every 15 minutes. <a id="repo" href="https://github.com/rxxbt/kshape-site" rel="noopener">Code and every snapshot are public.</a></p>
+</footer>
+<script src="app.js?v=1"></script>
+</body>
+</html>

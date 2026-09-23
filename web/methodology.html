@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — $KSHAPE</title>
+<meta name="description" content="How kshape.xyz calculates KSHAPE's APR and payouts: the Stonk Board methodology, every input and its source.">
+<meta name="theme-color" content="#0b0d0c">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="logo.png" alt="" width="34" height="34"><span>$KSHAPE</span></a>
+  <nav><a href="./">Dashboard</a><a href="https://x.com/kshapetoken" rel="noopener">X</a></nav>
+</header>
+<main class="doc">
+  <h1>How the numbers are calculated</h1>
+  <p>The APR on this site follows the <a href="https://thestonkboard.com/methodology" rel="noopener">Stonk Board's published methodology</a> for transfer-tax coins. Every input is public and linked below. The code and every 15-minute snapshot are on <a class="repo" href="https://github.com/rxxbt/kshape-site" rel="noopener">GitHub</a>.</p>
+
+  <h2>APR</h2>
+  <p class="formula">APR = fees assessed × (1 − deduction) ÷ days ÷ eligible holdings × 365 × 100</p>
+  <p>Fees and holdings are both counted in KSHAPE and valued at the same price, so the price cancels. The APR is the share of the eligible supply paid out as tax, per year. Changes in KSHAPE's own price are not part of it; the Board leaves them out the same way.</p>
+
+  <h2>Inputs</h2>
+  <table>
+    <tr><th>Input</th><th>What it is</th><th>Source</th></tr>
+    <tr><td>Fees assessed</td><td>The <span class="live" data-k="tax">3%</span> transfer tax, in KSHAPE: withdrawn by the platform, plus withheld on the mint, plus withheld in holder accounts. <span class="live" data-k="assessed">—</span> so far.</td><td><a class="acct" href="#" rel="noopener">Platform account</a> · <a href="https://solscan.io/token/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7" rel="noopener">Mint</a></td></tr>
+    <tr><td>Eligible holdings</td><td>Wallets holding at least $20 of KSHAPE, excluding program addresses (the bonding curve, pools), frozen accounts and the distributor. <span class="live" data-k="elig">—</span> right now.</td><td>All KSHAPE token accounts, read from the chain</td></tr>
+    <tr><td>Deduction</td><td>The platform's share, measured: 1 − NVDAX paid ÷ NVDAX bought with the tax up to the last payout. Currently <span class="live" data-k="ded">—</span>.</td><td>Conversions on-chain · <a href="https://www.stonkfun.xyz/api/public/v1/tokens/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7/rewards" rel="noopener">StonkFun rewards API</a></td></tr>
+    <tr><td>Payouts</td><td>NVDAX paid, pending, number of payouts, wallets paid.</td><td><a href="https://www.stonkfun.xyz/api/public/v1/tokens/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7/rewards" rel="noopener">StonkFun rewards API</a></td></tr>
+    <tr><td>Prices</td><td>KSHAPE and NVDAX in USD.</td><td><a href="https://www.stonkfun.xyz/api/public/v1/tokens/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7" rel="noopener">StonkFun API</a></td></tr>
+  </table>
+
+  <h2>Windows</h2>
+  <ul>
+    <li><b>Since launch</b>: from launch to the latest snapshot.</li>
+    <li><b>24h, 3d, 7d</b>: the last 24, 72 and 168 complete hours, which are the Board's windows. Each shows n/a until that much history exists.</li>
+    <li><b>Realized</b>: NVDAX actually paid plus pending, at today's NVDA price, annualized over the time since launch and divided by eligible holdings at today's KSHAPE price.</li>
+  </ul>
+
+  <h2>APY</h2>
+  <p class="formula">APY = 100 × [(1 + APR ÷ 36,500)^365 − 1]</p>
+  <p>The Board's formula: one reinvestment a day at a constant APR.</p>
+
+  <h2>Where this differs from the Stonk Board</h2>
+  <ul>
+    <li>The Board lists a coin only after it has been bonded for 7 days, and every window must start after bonding. KSHAPE hasn't bonded, so the Board doesn't list it yet. This site includes pre-bond data.</li>
+    <li>"Since launch" is this site's window. The Board publishes 24h, 3d and 7d.</li>
+    <li>The Board assigns each fee to the transfer that paid it. This site assigns fees to when the platform withdrew them, usually minutes to a few hours later. Totals are identical; a window's edges can shift by one withdrawal.</li>
+    <li>The Board applies StonkFun's configured operating deduction. StonkFun doesn't publish that figure, so this site measures it from the chain.</li>
+  </ul>
+
+  <h2>Check it yourself</h2>
+  <ul>
+    <li><a href="https://www.stonkfun.xyz/api/public/v1/tokens/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7/rewards" rel="noopener">StonkFun rewards API for KSHAPE</a></li>
+    <li><a href="https://solscan.io/token/j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7" rel="noopener">The KSHAPE mint on Solscan</a></li>
+    <li><a class="acct" href="#" rel="noopener">The platform's KSHAPE account on Solscan</a>: every fee withdrawal and every conversion to NVDAX</li>
+    <li><a class="repo" href="https://github.com/rxxbt/kshape-site" rel="noopener">The code and every snapshot</a></li>
+  </ul>
+</main>
+<footer><p><a href="./">← Back to the dashboard</a></p></footer>
+<script>
+fetch("data/latest.json?t=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(s => {
+  const int = n => Math.round(n).toLocaleString("en-US");
+  const set = (k, v) => document.querySelectorAll(`[data-k="${k}"]`).forEach(e => e.textContent = v);
+  set("tax", s.token.transfer_fee_bps / 100 + "%");
+  set("assessed", int(s.fees.assessed) + " KSHAPE (" + s.fees.pct_of_supply.toFixed(2) + "% of supply)");
+  set("elig", `${s.holders.eligible_wallets} of ${s.holders.owners} wallets`);
+  set("ded", (s.deduction.measured * 100).toFixed(2) + "%");
+  document.querySelectorAll("a.acct").forEach(a => a.href = "https://solscan.io/account/" + s.fees.platform_account);
+}).catch(() => {});
+</script>
+</body>
+</html>
