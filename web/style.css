@@ -102,3 +102,10 @@ footer a { color: var(--soft); }
   .top { padding-top: 16px; }
   .brand { font-size: 18px; }
 }
+
+.shares { font: 900 clamp(17px, 2.6vw, 24px)/1.3 var(--num); color: var(--text); margin-top: 8px; }
+.kcard .chart .nvda { fill: none; stroke: var(--green); stroke-width: 2.5; stroke-linejoin: round; }
+.kcard .chart .wage { fill: none; stroke: var(--red); stroke-width: 2.5; stroke-linejoin: round; }
+.kcard .chart .endlab { font: 900 13px var(--num); }
+.ksource { color: var(--dim); font-size: 13px; margin-top: 12px;
+  border-top: 1px solid var(--line); padding-top: 12px; }

@@ -115,6 +115,61 @@ def instruction_types(tx):
             if isinstance(ix.get("parsed"), dict) and "type" in ix["parsed"]}
 
 
+
+# ------------------------------------------------- the K: NVDA vs real wages
+YAHOO = "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=7y&interval=1wk"
+BLS = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+WAGES = "CES0500000013"        # avg hourly earnings, total private, 1982-84 dollars (real)
+
+
+def refresh_k_series(path, max_age_h=20):
+    """Weekly NVDA closes and monthly real wages, both indexed to Jan 2020 = 100.
+
+    Refreshed once a day: BLS limits unregistered callers and neither feed is ours. Any
+    failure leaves the previous file in place — the K chart goes stale, the rest of the
+    site does not.
+    """
+    if path.exists():
+        try:
+            prev = json.loads(path.read_text())
+            if (dt.datetime.now(UTC) - ts(prev["generated_at"])).total_seconds() < max_age_h * 3600:
+                return prev
+        except Exception:
+            prev = None
+    y = http_json(YAHOO, tries=3)["chart"]["result"][0]
+    stamps = y["timestamp"]
+    closes = (y["indicators"].get("adjclose") or [{}])[0].get("adjclose") or y["indicators"]["quote"][0]["close"]
+    nvda = [[dt.datetime.fromtimestamp(t, UTC).strftime("%Y-%m-%d"), c]
+            for t, c in zip(stamps, closes) if c]
+    b = http_json(BLS, {"seriesid": [WAGES], "startyear": "2019", "endyear": str(now_year())}, tries=3)
+    if b.get("status") != "REQUEST_SUCCEEDED":
+        raise RuntimeError(f"BLS: {b.get('status')} {b.get('message')}")
+    wages = []
+    for d in b["Results"]["series"][0]["data"]:
+        try:                                                 # BLS writes "-" for months it has not published
+            if d["period"].startswith("M"):
+                wages.append([f"{d['year']}-{d['period'][1:]}-01", float(d["value"])])
+        except ValueError:
+            continue
+    wages.sort()
+    base_n = next(v for d, v in nvda if d >= "2020-01-01")
+    base_w = next(v for d, v in wages if d >= "2020-01-01")
+    out = {"generated_at": iso(dt.datetime.now(UTC)),
+           "base": "2020-01 = 100",
+           "series": {"nvda": [[d, round(v / base_n * 100, 2)] for d, v in nvda],
+                      "wages": [[d, round(v / base_w * 100, 2)] for d, v in wages]},
+           "latest": {"nvda_usd": nvda[-1][1], "nvda_date": nvda[-1][0],
+                      "wages_index": wages[-1][1], "wages_date": wages[-1][0]},
+           "sources": {"nvda": "Yahoo Finance, weekly close, split-adjusted",
+                       "wages": "BLS CES0500000013 — average hourly earnings, total private, 1982-84 dollars"}}
+    path.write_text(json.dumps(out))
+    return out
+
+
+def now_year():
+    return dt.datetime.now(UTC).year
+
+
 # --------------------------------------------------------------- main
 def main():
     now = dt.datetime.now(UTC)
@@ -128,6 +183,14 @@ def main():
     rw = api(f"/tokens/{MINT}/rewards")
     rewards, qdec = rw["rewards"], rw["quote"]["decimals"]
     px_quote = api(f"/launchlab/pricing?quoteMint={quote_mint}")["prices"]["quoteUsd"]
+    # xStocks scale balances by a multiplier that accrues dividends: shares = raw x multiplier
+    qmint = rpc("getAccountInfo", [quote_mint, {"encoding": "jsonParsed"}])["value"]["data"]["parsed"]["info"]
+    scale = 1.0
+    for e in qmint.get("extensions", []):
+        if e["extension"] == "scaledUiAmountConfig":
+            st = e["state"]                                  # the pending multiplier takes over at its timestamp
+            scale = float(st["newMultiplier"]) if int(st["newMultiplierEffectiveTimestamp"]) <= now.timestamp() \
+                else float(st["multiplier"])
     px_token = token["market"]["priceUsd"]
     if not (px_token and px_quote and rewards):
         raise RuntimeError("StonkFun returned an empty price or rewards object")
@@ -248,8 +311,11 @@ def main():
                   "peak_market_cap_usd": token["market"].get("peakMarketCapUsd"),
                   "status": token["status"], "graduation_progress": token.get("graduationProgress"),
                   "transfer_fee_bps": fee_bps, "supply": supply, "pool": token.get("pool")},
-        "quote": {"mint": quote_mint, "symbol": token["quote"]["symbol"], "price_usd": px_quote},
+        "quote": {"mint": quote_mint, "symbol": token["quote"]["symbol"], "price_usd": px_quote,
+                  "share_multiplier": scale, "tokens_per_share": 1 / scale},
         "payouts": {"paid": paid, "pending": pending, "paid_usd": paid * px_quote,
+                    "shares_paid": paid * scale, "shares_bought": bought * scale,
+                    "token_per_share": (1 / scale) / px_token * px_quote,
                     "payout_count": rewards["payoutCount"], "wallets_paid": rewards["holderCount"],
                     "last_payout_at": rewards.get("lastPayoutAt")},
         "fees": {"assessed": assessed, "pct_of_supply": assessed / supply * 100,
@@ -268,6 +334,11 @@ def main():
     # JSON has no infinity
     snap["apy"] = {k: (None if v is None else ("inf" if v == float("inf") else v))
                    for k, v in snap["apy"].items()}
+
+    try:
+        refresh_k_series(DATA / "k.json")
+    except Exception as e:                                   # the K chart may go stale; nothing else does
+        print(f"k-series refresh skipped: {e}", file=sys.stderr)
 
     ev_path.write_text(json.dumps(ev, indent=1))
     (DATA / "latest.json").write_text(json.dumps(snap, indent=1))
