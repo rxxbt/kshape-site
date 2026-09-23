@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-23T15:51:41Z",
+ "generated_at": "2026-09-23T16:08:34Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 72.17,
+ "hours_since_launch": 72.45,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.72469750750322e-06,
-  "market_cap_usd": 4724.697507503221,
+  "price_usd": 4.725972933711839e-06,
+  "market_cap_usd": 4725.972933711839,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08325691461634138,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 225.14879809537575,
+  "price_usd": 225.4103144976698,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1007.8532856975556,
+  "paid_usd": 1009.0239344753661,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 47572659.5857699,
+  "token_per_share": 47615062.88620136,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 63,
   "eligible_wallets": 7,
   "eligible_tokens": 198156092.732329,
-  "eligible_usd": 936.2275974290118,
-  "min_tokens": 4233075.232485954,
+  "eligible_usd": 936.4803309030801,
+  "min_tokens": 4231932.827489079,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 6568.858323363745,
-  "h24": 1304.462681566408,
-  "d3": null,
+  "since_launch": 6543.337836330594,
+  "h24": 1725.8883956869024,
+  "d3": 2943.7422359787383,
   "d7": null,
-  "realized_since_launch": 13238.414289369626
+  "realized_since_launch": 13198.736150751887
  },
  "apy": {
-  "since_launch": 1.7089553416270661e+28,
-  "h24": 36840351.20600733,
-  "d3": null,
+  "since_launch": 1.3764904690363957e+28,
+  "h24": 2106802818.71333,
+  "d3": 197294675801444.8,
   "d7": null,
-  "realized_since_launch": 1.1367393605820299e+51
+  "realized_since_launch": 8.494841489462556e+50
  },
  "series": {
   "bought_cumulative": [
