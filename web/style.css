@@ -13,7 +13,8 @@ a { color: var(--text); text-decoration-color: var(--dim); text-underline-offset
 a:hover { text-decoration-color: var(--green); }
 p { margin: 0; }
 
-.top { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+.top { position: sticky; top: 0; z-index: 20; background: rgba(11, 13, 12, .88);
+  backdrop-filter: blur(10px); border-bottom: 1px solid transparent; display: flex; align-items: center; justify-content: space-between; gap: 16px;
   max-width: 1080px; margin: 0 auto; padding: 20px 20px 8px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none;
   font: 900 20px/1 var(--num); letter-spacing: .01em; }
@@ -109,3 +110,15 @@ footer a { color: var(--soft); }
 .kcard .chart .endlab { font: 900 13px var(--num); }
 .ksource { color: var(--dim); font-size: 13px; margin-top: 12px;
   border-top: 1px solid var(--line); padding-top: 12px; }
+
+/* buy */
+.buy { display: block; margin: 0 0 24px; padding: clamp(18px, 3.4vw, 26px) 24px; border-radius: 16px;
+  background: var(--green); color: #0b0d0c; text-align: center; text-decoration: none;
+  font: 900 clamp(20px, 3.6vw, 30px)/1.1 var(--num); letter-spacing: .01em;
+  box-shadow: 0 10px 30px rgba(118, 185, 0, .16); transition: transform .12s ease, box-shadow .12s ease, filter .12s ease; }
+.buy:hover { filter: brightness(1.07); transform: translateY(-1px); box-shadow: 0 14px 36px rgba(118, 185, 0, .26); }
+.buy:active { transform: translateY(0); }
+.buy span { display: inline-block; margin-left: 6px; }
+.buy-sm { background: var(--green); color: #0b0d0c !important; border-radius: 8px; padding: 6px 14px;
+  font: 900 14px/1 var(--num); text-decoration: none; }
+.buy-sm:hover { filter: brightness(1.07); }

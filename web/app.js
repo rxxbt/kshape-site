@@ -8,6 +8,8 @@
   const int = (n) => Math.round(n).toLocaleString("en-US");
   const usd = (n) => "$" + (n >= 100 ? int(n) : n.toFixed(2));
   const pct = (n) => int(n) + "%";
+  const compact = (n) => n >= 1e9 ? (n / 1e9).toFixed(1) + "B"
+    : n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? (n / 1e3).toFixed(1) + "K" : int(n);
   const sup = (s) => s.replace(/[0-9-]/g, (c) => "⁰¹²³⁴⁵⁶⁷⁸⁹"["0123456789".indexOf(c)] ?? "⁻");
   function big(n) {                         // the Board abbreviates with K / M / B percent
     if (n === "inf" || n === Infinity) return "∞";
@@ -35,7 +37,7 @@
   function render(s) {
     const p = s.payouts, q = s.quote, t = s.token;
     $("paid").textContent = p.paid.toFixed(8);
-    $("paid-shares").textContent = `≈ ${p.shares_paid.toFixed(4)} shares of NVIDIA`;
+    $("paid-shares").textContent = p.shares_paid ? `≈ ${p.shares_paid.toFixed(4)} shares of NVIDIA` : "";
     $("paid-sub").textContent = `≈ ${usd(p.paid_usd)} at today's NVDA price · ` +
       `+${p.pending.toFixed(4)} pending · ${int(p.payout_count)} payouts to ${int(p.wallets_paid)} wallets`;
 
@@ -70,7 +72,7 @@
     $("g-px").textContent = "$" + t.price_usd.toPrecision(3);
     $("g-mcap").textContent = `${usd(t.market_cap_usd)} market cap`;
     $("g-nv").textContent = usd(q.price_usd);
-    $("g-share").textContent = int(p.token_per_share).slice(0, -4) + "M KSHAPE";
+    $("g-share").textContent = p.token_per_share ? compact(p.token_per_share) + " KSHAPE" : "—";
 
     $("chart-total").textContent = `${f.quote_bought.toFixed(4)} NVDAX total`;
     $("updated").textContent = `Updated ${ago(s.generated_at)} · ${utc(s.generated_at)}`;
