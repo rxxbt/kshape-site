@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T03:52:01Z",
+ "generated_at": "2026-09-24T04:07:51Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 84.17,
+ "hours_since_launch": 84.44,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.749500335448656e-06,
-  "market_cap_usd": 4749.500335448655,
+  "price_usd": 4.746721377991868e-06,
+  "market_cap_usd": 4746.7213779918675,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08418693062885542,
@@ -17,26 +17,26 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 225.42155024571557,
+  "price_usd": 225.256539575327,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1009.0742300384826,
+  "paid_usd": 1008.3355783213376,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 47381555.786795355,
+  "token_per_share": 47374591.16825027,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
  },
  "fees": {
-  "assessed": 113562545.69762701,
-  "pct_of_supply": 11.3562545697627,
+  "assessed": 113749553.100296,
+  "pct_of_supply": 11.374955310029602,
   "withdrawn": 113419681.113296,
-  "on_mint": 142864.584331,
+  "on_mint": 329871.987,
   "in_accounts": 0.0,
   "quote_bought": 4.79692111,
   "platform_account": "GCnByU9orW26gsxCTqHjW9zXCfoCun2ENd72eCYoKvFW",
@@ -48,26 +48,26 @@
   "base_bought": 4.73815456
  },
  "holders": {
-  "owners": 63,
-  "eligible_wallets": 7,
-  "eligible_tokens": 199947830.656562,
-  "eligible_usd": 949.6522887755722,
-  "min_tokens": 4210969.278331618,
+  "owners": 64,
+  "eligible_wallets": 8,
+  "eligible_tokens": 205632416.478071,
+  "eligible_usd": 976.0797873045868,
+  "min_tokens": 4213434.580915119,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 5584.214093220643,
-  "h24": 417.64930688588146,
-  "d3": 1462.1938677087387,
+  "since_launch": 5421.778641366399,
+  "h24": 406.10364025923974,
+  "d3": 1421.7723881043257,
   "d7": null,
-  "realized_since_launch": 11203.353667797324
+  "realized_since_launch": 10857.987733637408
  },
  "apy": {
-  "since_launch": 3.686551020785026e+24,
-  "h24": 6261.053774842548,
-  "d3": 168395201.60798994,
+  "since_launch": 8.986594325123838e+23,
+  "h24": 5574.74536528556,
+  "d3": 114143982.39794704,
   "d7": null,
-  "realized_since_launch": 2.7130475131550113e+44
+  "realized_since_launch": 1.91265803472173e+43
  },
  "series": {
   "bought_cumulative": [
