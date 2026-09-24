@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T04:25:59Z",
+ "generated_at": "2026-09-24T04:50:45Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 84.74,
+ "hours_since_launch": 85.15,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.80978433944448e-06,
-  "market_cap_usd": 4809.78433944448,
+  "price_usd": 4.81656305373474e-06,
+  "market_cap_usd": 4816.563053734741,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 225.3220463786199,
+  "price_usd": 225.3395153864462,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1008.6288121626585,
+  "paid_usd": 1008.7070102125018,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46767040.75478909,
+  "token_per_share": 46704842.6554268,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 64,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 989.0475764583509,
-  "min_tokens": 4158190.5941150696,
+  "eligible_usd": 990.4414998584716,
+  "min_tokens": 4152338.45729313,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 5402.446922512911,
+  "since_launch": 5376.248486536542,
   "h24": 406.10364025923974,
   "d3": 1421.7723881043257,
   "d7": null,
-  "realized_since_launch": 10680.522227563115
+  "realized_since_launch": 10614.59273935385
  },
  "apy": {
-  "since_launch": 7.594162136245037e+23,
+  "since_launch": 6.04421431875769e+23,
   "h24": 5574.74536528556,
   "d3": 114143982.39794704,
   "d7": null,
-  "realized_since_launch": 4.858541402093835e+42
+  "realized_since_launch": 2.916356339645848e+42
  },
  "series": {
   "bought_cumulative": [
