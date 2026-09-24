@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T08:43:25Z",
+ "generated_at": "2026-09-24T08:55:48Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 89.03,
+ "hours_since_launch": 89.24,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.770333264992488e-06,
-  "market_cap_usd": 4770.333264992489,
+  "price_usd": 4.766816905343312e-06,
+  "market_cap_usd": 4766.816905343313,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 223.240974,
+  "price_usd": 222.94444054066224,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 999.3131255931127,
+  "paid_usd": 997.9857268957134,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46718296.13720057,
+  "token_per_share": 46690656.828727484,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 64,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 980.9351566861316,
-  "min_tokens": 4192579.194994984,
+  "eligible_usd": 980.2120791542656,
+  "min_tokens": 4195671.954083492,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 5142.096572561598,
+  "since_launch": 5130.195296527761,
   "h24": 406.10364025923974,
   "d3": 1123.5185923171598,
   "d7": null,
-  "realized_since_launch": 10155.219460291446
+  "realized_since_launch": 10125.721326515826
  },
  "apy": {
-  "since_launch": 7.807261542912725e+22,
+  "since_launch": 7.033768811637214e+22,
   "h24": 5574.74536528556,
   "d3": 6394136.3833173,
   "d7": null,
-  "realized_since_launch": 8.16001290128365e+40
+  "realized_since_launch": 6.477914423033315e+40
  },
  "series": {
   "bought_cumulative": [
