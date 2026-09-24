@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T15:12:47Z",
+ "generated_at": "2026-09-24T15:29:25Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 95.52,
+ "hours_since_launch": 95.8,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.739010507723743e-06,
-  "market_cap_usd": 4739.010507723743,
+  "price_usd": 4.748122138155068e-06,
+  "market_cap_usd": 4748.122138155068,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 221.874562,
+  "price_usd": 222.40135493302017,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 993.1965358734856,
+  "paid_usd": 995.5546652213568,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46739240.26418651,
+  "token_per_share": 46760307.03326189,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 62,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 974.4941824182034,
-  "min_tokens": 4220290.28367917,
+  "eligible_usd": 976.3678290018519,
+  "min_tokens": 4212191.560803279,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4792.741547107766,
+  "since_launch": 4778.881245998273,
   "h24": 406.10364025923974,
   "d3": 925.6246983258816,
   "d7": null,
-  "realized_since_launch": 9469.515251400355
+  "realized_since_launch": 9446.385870252634
  },
  "apy": {
-  "since_launch": 3.605882046731517e+21,
+  "since_launch": 3.190029386899862e+21,
   "h24": 5574.74536528556,
   "d3": 932747.6389015068,
   "d7": null,
-  "realized_since_launch": 3.669668077425318e+38
+  "realized_since_launch": 3.0538609709831927e+38
  },
  "series": {
   "bought_cumulative": [
