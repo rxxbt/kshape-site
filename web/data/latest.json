@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T23:07:22Z",
+ "generated_at": "2026-09-24T23:23:34Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 103.43,
+ "hours_since_launch": 103.7,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.792605739423297e-06,
-  "market_cap_usd": 4792.605739423298,
+  "price_usd": 4.789979607700062e-06,
+  "market_cap_usd": 4789.979607700062,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 224.34398046259167,
+  "price_usd": 224.03777108641773,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1004.2506100339479,
+  "paid_usd": 1002.8798981825012,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46730940.85813347,
+  "token_per_share": 46692742.83910413,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 61,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 985.5150994242849,
-  "min_tokens": 4173095.198606225,
+  "eligible_usd": 984.9750816120463,
+  "min_tokens": 4175383.120180573,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4426.227498614255,
+  "since_launch": 4414.702954507966,
   "h24": 0.0,
   "d3": 919.6878815061433,
   "d7": null,
-  "realized_since_launch": 8743.802634730213
+  "realized_since_launch": 8713.907841269887
  },
  "apy": {
-  "since_launch": 1.3922912815028907e+20,
+  "since_launch": 1.2562798214896316e+20,
   "h24": 0.0,
   "d3": 880265.7447254638,
   "d7": null,
-  "realized_since_launch": 1.1019850075891397e+36
+  "realized_since_launch": 8.65766566574177e+35
  },
  "series": {
   "bought_cumulative": [
