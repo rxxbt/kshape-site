@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T13:43:35Z",
+ "generated_at": "2026-09-24T13:56:05Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 94.03,
+ "hours_since_launch": 94.24,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.766598376696768e-06,
-  "market_cap_usd": 4766.598376696768,
+  "price_usd": 4.769797096476082e-06,
+  "market_cap_usd": 4769.797096476082,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 223.379107,
+  "price_usd": 223.095128,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 999.9314624400821,
+  "paid_usd": 998.6602623686614,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46783832.6058563,
+  "token_per_share": 46693022.64513038,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 63,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 980.167142580607,
-  "min_tokens": 4195864.308135797,
+  "eligible_usd": 980.8249030584635,
+  "min_tokens": 4193050.4789765514,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4868.520692427772,
+  "since_launch": 4857.765430710275,
   "h24": 406.10364025923974,
   "d3": 1123.5185923171598,
   "d7": null,
-  "realized_since_launch": 9628.417341889734
+  "realized_since_launch": 9588.498790733804
  },
  "apy": {
-  "since_launch": 7.041273830038869e+21,
+  "since_launch": 6.403736465482906e+21,
   "h24": 5574.74536528556,
   "d3": 6394136.3833173,
   "d7": null,
-  "realized_since_launch": 1.293084157446712e+39
+  "realized_since_launch": 9.427352384854776e+38
  },
  "series": {
   "bought_cumulative": [
