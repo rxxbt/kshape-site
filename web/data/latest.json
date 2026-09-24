@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-24T14:57:09Z",
+ "generated_at": "2026-09-24T15:12:47Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 95.26,
+ "hours_since_launch": 95.52,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.7520477713463545e-06,
-  "market_cap_usd": 4752.047771346355,
+  "price_usd": 4.739010507723743e-06,
+  "market_cap_usd": 4739.010507723743,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 222.05291,
+  "price_usd": 221.874562,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 993.9948906473869,
+  "paid_usd": 993.1965358734856,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46648477.98498186,
+  "token_per_share": 46739240.26418651,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 62,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 977.1750664411827,
-  "min_tokens": 4208711.8990248665,
+  "eligible_usd": 974.4941824182034,
+  "min_tokens": 4220290.28367917,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4805.86267482102,
+  "since_launch": 4792.741547107766,
   "h24": 406.10364025923974,
-  "d3": 1123.5185923171598,
+  "d3": 925.6246983258816,
   "d7": null,
-  "realized_since_launch": 9477.0009580894
+  "realized_since_launch": 9469.515251400355
  },
  "apy": {
-  "since_launch": 4.0492428572762204e+21,
+  "since_launch": 3.605882046731517e+21,
   "h24": 5574.74536528556,
-  "d3": 6394136.3833173,
+  "d3": 932747.6389015068,
   "d7": null,
-  "realized_since_launch": 3.894375067976237e+38
+  "realized_since_launch": 3.669668077425318e+38
  },
  "series": {
   "bought_cumulative": [
