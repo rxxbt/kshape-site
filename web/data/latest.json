@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-25T21:52:02Z",
+ "generated_at": "2026-09-25T22:07:15Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 126.17,
+ "hours_since_launch": 126.43,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.705940468411505e-06,
-  "market_cap_usd": 4705.940468411505,
+  "price_usd": 4.7035926779504715e-06,
+  "market_cap_usd": 4703.592677950471,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.0819531282699306,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 225.80950976487568,
+  "price_usd": 225.43095206023753,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1010.8108872154733,
+  "paid_usd": 1009.1163162043322,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 47902436.77351471,
+  "token_per_share": 47846001.20792644,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 59,
   "eligible_wallets": 7,
   "eligible_tokens": 199947830.656562,
-  "eligible_usd": 940.9425878578056,
-  "min_tokens": 4249947.515114024,
+  "eligible_usd": 940.4731522482858,
+  "min_tokens": 4252068.869346641,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 3742.34012853829,
+  "since_launch": 3734.835301735647,
   "h24": 0.0,
   "d3": 139.21643562862715,
   "d7": null,
-  "realized_since_launch": 7556.19652003275
+  "realized_since_launch": 7532.159077230929
  },
  "apy": {
-  "since_launch": 2.968126964074236e+17,
+  "since_launch": 2.7727943621096394e+17,
   "h24": 0.0,
   "d3": 301.2907844937667,
   "d7": null,
-  "realized_since_launch": 6.693599699003722e+31
+  "realized_since_launch": 5.48463358497777e+31
  },
  "series": {
   "bought_cumulative": [
