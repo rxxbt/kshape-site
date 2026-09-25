@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-09-25T04:42:03Z",
+ "generated_at": "2026-09-25T04:54:12Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 109.01,
+ "hours_since_launch": 109.21,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.8026067965025515e-06,
-  "market_cap_usd": 4802.606796502551,
+  "price_usd": 4.720772597046993e-06,
+  "market_cap_usd": 4720.772597046993,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
-  "graduation_progress": 0.08735493824758743,
+  "graduation_progress": 0.08342665529113749,
   "transfer_fee_bps": 300,
   "supply": 1000000000.0,
   "pool": "D1F3X2YPyitNRRENtYnQ1fnq7HXuCXxqfFEHcUBJpZLP"
@@ -17,26 +17,26 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 224.5717169862358,
+  "price_usd": 224.91681662655455,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1005.2700469821781,
+  "paid_usd": 1006.8148467294144,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46680966.113147184,
+  "token_per_share": 47563154.98393662,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
  },
  "fees": {
-  "assessed": 113749553.100296,
-  "pct_of_supply": 11.374955310029602,
+  "assessed": 113989027.79335201,
+  "pct_of_supply": 11.3989027793352,
   "withdrawn": 113419681.113296,
-  "on_mint": 329871.987,
+  "on_mint": 569346.680056,
   "in_accounts": 0.0,
   "quote_bought": 4.79692111,
   "platform_account": "GCnByU9orW26gsxCTqHjW9zXCfoCun2ENd72eCYoKvFW",
@@ -49,25 +49,25 @@
  },
  "holders": {
   "owners": 61,
-  "eligible_wallets": 8,
-  "eligible_tokens": 205632416.478071,
-  "eligible_usd": 987.5716409588271,
-  "min_tokens": 4164405.0507247006,
+  "eligible_wallets": 7,
+  "eligible_tokens": 199947830.656562,
+  "eligible_usd": 943.9082398024905,
+  "min_tokens": 4236594.665142459,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4199.729392749709,
+  "since_launch": 4320.20381094294,
   "h24": 0.0,
-  "d3": 603.7511326323822,
+  "d3": 620.9159856693583,
   "d7": null,
-  "realized_since_launch": 8287.494107519393
+  "realized_since_launch": 8668.094334721918
  },
  "apy": {
-  "since_launch": 1.8365801317616132e+19,
+  "since_launch": 5.401832022335318e+19,
   "h24": 0.0,
-  "d3": 39766.50547976088,
+  "d3": 47098.06682070737,
   "d7": null,
-  "realized_since_launch": 2.7247292037693127e+34
+  "realized_since_launch": 5.979980042738999e+35
  },
  "series": {
   "bought_cumulative": [
