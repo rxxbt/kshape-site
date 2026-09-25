@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-25T01:23:57Z",
+ "generated_at": "2026-09-25T01:36:39Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 105.71,
+ "hours_since_launch": 105.92,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.799851264916376e-06,
-  "market_cap_usd": 4799.851264916376,
+  "price_usd": 4.803036800808979e-06,
+  "market_cap_usd": 4803.036800808979,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08735493824758743,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 224.58064886521004,
+  "price_usd": 224.55669808878162,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1005.3100295343737,
+  "paid_usd": 1005.2028165759987,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 46709622.748301536,
+  "token_per_share": 46673665.230672844,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 61,
   "eligible_wallets": 8,
   "eligible_tokens": 205632416.478071,
-  "eligible_usd": 987.0050143400802,
-  "min_tokens": 4166795.78098311,
+  "eligible_usd": 987.6600637834538,
+  "min_tokens": 4164032.2215793524,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4330.905222117441,
+  "since_launch": 4322.2526947639235,
   "h24": 0.0,
   "d3": 603.7511326323822,
   "d7": null,
-  "realized_since_launch": 8551.595077140504
+  "realized_since_launch": 8527.94026873309
  },
  "apy": {
-  "since_launch": 5.9441877803288855e+19,
+  "since_launch": 5.501705323066816e+19,
   "h24": 0.0,
   "d3": 39766.50547976088,
   "d7": null,
-  "realized_since_launch": 2.3297926121419135e+35
+  "realized_since_launch": 1.9233758170673955e+35
  },
  "series": {
   "bought_cumulative": [
