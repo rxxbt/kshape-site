@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-25T06:31:38Z",
+ "generated_at": "2026-09-25T06:55:16Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 110.83,
+ "hours_since_launch": 111.23,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.73464194413304e-06,
-  "market_cap_usd": 4734.64194413304,
+  "price_usd": 4.7339562786734496e-06,
+  "market_cap_usd": 4733.95627867345,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.08342665529113749,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 225.49844462830876,
+  "price_usd": 225.37457528423036,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1009.4184390984635,
+  "paid_usd": 1008.8639519038495,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 47546463.18602662,
+  "token_per_share": 47527228.11013414,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 61,
   "eligible_wallets": 7,
   "eligible_tokens": 199947830.656562,
-  "eligible_usd": 946.6813856649686,
-  "min_tokens": 4224184.264827696,
+  "eligible_usd": 946.5442883437673,
+  "min_tokens": 4224796.094991483,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 4256.907950330122,
+  "since_launch": 4241.830635181007,
   "h24": 0.0,
   "d3": 620.9159856693583,
   "d7": null,
-  "realized_since_launch": 8538.09956216041
+  "realized_since_launch": 8504.417040935787
  },
  "apy": {
-  "since_launch": 3.0658640509738566e+19,
+  "since_launch": 2.678559105030115e+19,
   "h24": 0.0,
   "d3": 47098.06682070737,
   "d7": null,
-  "realized_since_launch": 2.0884551233839924e+35
+  "realized_since_launch": 1.5893910161848222e+35
  },
  "series": {
   "bought_cumulative": [
