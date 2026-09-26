@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-26T17:24:15Z",
+ "generated_at": "2026-09-26T17:37:51Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 145.71,
+ "hours_since_launch": 145.94,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.690715705569059e-06,
-  "market_cap_usd": 4690.715705569059,
+  "price_usd": 4.692787532246994e-06,
+  "market_cap_usd": 4692.787532246994,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.0819531282699306,
@@ -17,26 +17,26 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 224.7513108290772,
+  "price_usd": 224.74931498163696,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1006.0739786315138,
+  "paid_usd": 1006.0650444448007,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 47832703.58789125,
+  "token_per_share": 47811161.26820306,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
  },
  "fees": {
-  "assessed": 114079972.194204,
-  "pct_of_supply": 11.4079972194204,
+  "assessed": 114652221.193078,
+  "pct_of_supply": 11.4652221193078,
   "withdrawn": 113419681.113296,
-  "on_mint": 660291.080908,
+  "on_mint": 1232540.079782,
   "in_accounts": 0.0,
   "quote_bought": 4.79692111,
   "platform_account": "GCnByU9orW26gsxCTqHjW9zXCfoCun2ENd72eCYoKvFW",
@@ -49,25 +49,25 @@
  },
  "holders": {
   "owners": 59,
-  "eligible_wallets": 7,
-  "eligible_tokens": 199947830.656562,
-  "eligible_usd": 937.8984295551979,
-  "min_tokens": 4263741.666597907,
+  "eligible_wallets": 6,
+  "eligible_tokens": 180872864.027432,
+  "eligible_usd": 848.7979212297387,
+  "min_tokens": 4261859.260102413,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 3240.5719657971686,
+  "since_launch": 3594.7015602283336,
   "h24": 0.0,
   "d3": 0.0,
   "d7": null,
-  "realized_since_launch": 6533.5464170619825
+  "realized_since_launch": 7208.110700346595
  },
  "apy": {
-  "since_launch": 3044779617093469.5,
+  "since_launch": 7.759863371154226e+16,
   "h24": 0.0,
   "d3": 0.0,
   "d7": null,
-  "realized_since_launch": 1.2668052097198735e+28
+  "realized_since_launch": 3.700385851712586e+30
  },
  "series": {
   "bought_cumulative": [
