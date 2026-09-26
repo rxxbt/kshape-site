@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-26T06:10:19Z",
+ "generated_at": "2026-09-26T06:30:03Z",
  "launch_at": "2026-09-20T15:41:34Z",
- "hours_since_launch": 134.48,
+ "hours_since_launch": 134.81,
  "token": {
   "mint": "j9H2npnqabUWksozQL8VmeF5EuAHiHc31bN7LMoyHr7",
   "symbol": "KSHAPE",
-  "price_usd": 4.6906650760249305e-06,
-  "market_cap_usd": 4690.66507602493,
+  "price_usd": 4.6885080913659766e-06,
+  "market_cap_usd": 4688.508091365977,
   "peak_market_cap_usd": 25232.489498686195,
   "status": "new",
   "graduation_progress": 0.0819531282699306,
@@ -17,17 +17,17 @@
  "quote": {
   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
   "symbol": "NVDAX",
-  "price_usd": 225.00231885158993,
+  "price_usd": 224.73297058381112,
   "share_multiplier": 1.001701196801074,
   "tokens_per_share": 0.9983016923544598
  },
  "payouts": {
   "paid": 4.47638759,
   "pending": 0.05876658,
-  "paid_usd": 1007.1975878284802,
+  "paid_usd": 1005.9918805852071,
   "shares_paid": 4.484002806248475,
   "shares_bought": 4.805081616847337,
-  "token_per_share": 47886641.244395286,
+  "token_per_share": 47851320.823102154,
   "payout_count": 245,
   "wallets_paid": 86,
   "last_payout_at": "2026-09-22T16:44:05.061Z"
@@ -51,23 +51,23 @@
   "owners": 59,
   "eligible_wallets": 7,
   "eligible_tokens": 199947830.656562,
-  "eligible_usd": 937.8883062876823,
-  "min_tokens": 4263787.688066796,
+  "eligible_usd": 937.457021884365,
+  "min_tokens": 4265749.276796724,
   "min_usd": 20.0
  },
  "apr": {
-  "since_launch": 3511.2378186609776,
+  "since_launch": 3502.6669781698843,
   "h24": 0.0,
   "d3": 139.21643562862715,
   "d7": null,
-  "realized_since_launch": 7087.237783081948
+  "realized_since_launch": 7064.723346084239
  },
  "apy": {
-  "since_launch": 3.626851904545668e+16,
+  "since_launch": 3.3540537852489892e+16,
   "h24": 0.0,
   "d3": 301.2907844937667,
   "d7": null,
-  "realized_since_launch": 1.3466861369487444e+30
+  "realized_since_launch": 1.1152315070142108e+30
  },
  "series": {
   "bought_cumulative": [
